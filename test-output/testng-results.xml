@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-22T17:19:29 IST" name="Default suite" finished-at="2025-02-22T17:19:30 IST" duration-ms="684">
+  <suite started-at="2025-02-28T16:37:04 IST" name="Default suite" finished-at="2025-02-28T16:37:08 IST" duration-ms="4799">
     <groups>
     </groups>
-    <test started-at="2025-02-22T17:19:29 IST" name="Default test" finished-at="2025-02-22T17:19:30 IST" duration-ms="684">
-      <class name="interViewPractice.TestSuper1">
-        <test-method signature="integerActions(java.util.HashMap)[pri:0, instance:interViewPractice.TestSuper1@5ab956d7]" started-at="2025-02-22T17:19:30 IST" name="integerActions" data-provider="giveData" finished-at="2025-02-22T17:19:30 IST" duration-ms="19" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{a1=5, c1=4, b1=4}]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-02-28T16:37:04 IST" name="Default test" finished-at="2025-02-28T16:37:08 IST" duration-ms="4799">
+      <class name="interViewPractice.Interview">
+        <test-method signature="factorial()[pri:0, instance:interViewPractice.Interview@4686afc2]" started-at="2025-02-28T16:37:04 IST" name="factorial" finished-at="2025-02-28T16:37:08 IST" duration-ms="4718" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- integerActions -->
-        <test-method signature="integerActions(java.util.HashMap)[pri:0, instance:interViewPractice.TestSuper1@5ab956d7]" started-at="2025-02-22T17:19:30 IST" name="integerActions" data-provider="giveData" finished-at="2025-02-22T17:19:30 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{a1=7, c1=3, b1=6}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- integerActions -->
-      </class> <!-- interViewPractice.TestSuper1 -->
+        </test-method> <!-- factorial -->
+      </class> <!-- interViewPractice.Interview -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
