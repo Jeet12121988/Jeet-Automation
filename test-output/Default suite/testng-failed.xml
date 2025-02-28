@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="frameworkSelf.UserInteractivePage">
+      <class name="interViewPractice.Interview">
         <methods>
-          <include name="shopping" invocation-numbers="0 1"/>
-          <include name="BrowserInitialization"/>
+          <include name="stringReverse"/>
         </methods>
-      </class> <!-- frameworkSelf.UserInteractivePage -->
+      </class> <!-- interViewPractice.Interview -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

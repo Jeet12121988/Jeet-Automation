@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class Interview {
 	
-	@Test
+//	@Test
 	public void factorial() {
 		
 		Scanner sc=new Scanner(System.in);
@@ -23,10 +23,38 @@ public class Interview {
 		System.out.println("Factorial of your number is-"+fact);
 	}
 	
-	
+	@Test
 public void stringReverse() {
 		
-		System.err.println("Factorial code will take place here");
+//		Scanner sc1=new Scanner(System.in);
+//		System.out.println("Enter your String");
+//		
+//		String a=sc1.next();
+//		System.out.println("your entered String is-"+a);
+		
+		String a="Hello Java";
+		
+	    System.out.println(a);
+		
+		String reverse[]=a.split(" ");
+	
+		System.out.println(reverse.length);
+		
+		String wordwise="";
+	
+		for (int i=0;i<reverse.length;i++) {
+			
+			String desired="";
+			
+			for(int j=0;j<reverse[i].length();j++) {
+				
+				desired=reverse[i].charAt(j)+desired;
+				
+			}
+		
+			wordwise=wordwise+" "+desired;
+		}
+		System.out.println("Reverse of your string is -"+wordwise );
 	}
 
 
