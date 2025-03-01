@@ -1,5 +1,6 @@
 package interViewPractice;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import org.testng.annotations.Test;
@@ -104,7 +105,7 @@ public void stringReverse() {
 	}
 
 
-    @Test
+   // @Test
     public void findSecondSmallestElement() {
     	
 		//Find the second smallest number from an array
@@ -140,4 +141,90 @@ public void stringReverse() {
 	
 	
 }
+
+
+    //@Test
+    public void findUniqueNumbersFromAnArray() {
+    	
+    	int a[]= {2,5,6,6,5,2,1,4,3,4,4,3};
+    	int uniqueNumber = 0;
+    	
+    	ArrayList<Integer> ab=new ArrayList<Integer>();
+    	
+    	for(int i=0;i<a.length;i++) {
+    		
+    		int k=0;
+    		
+    		
+    		if(!ab.contains(a[i])) {
+    			
+    			ab.add(a[i]);
+    			k++;
+    			for (int j=i+1;j<a.length;j++) {
+        			
+        			if(a[i]==a[j]) {
+        				
+        				k++;
+        				
+        			}
+                     
+                      
+        		}
+    			 if(k==1) 
+               	  
+               	  uniqueNumber=a[i];
+    		}
+    		
+    		
+
+    	}
+    	
+    	System.out.println("Your arrayList is -"+ab);
+    	System.out.println("Your Unique Number is -"+uniqueNumber);
+    	
+    }
+
+
+    @Test
+    public void findDoubleNumbersInArray() {
+    	
+    	
+    	int[] a= {1,2,2,5,6,7,8,9,5};
+    	
+    	ArrayList<Integer> ab=new ArrayList<Integer>();
+    	
+    	for(int i=0;i<a.length;i++) {
+    		
+    		int k=0;
+    		if(!ab.contains(a[i])) {
+    			
+    			ab.add(a[i]);
+    			
+    			k++;
+    			
+    		
+    			
+    			for(int j=i+1;j<a.length;j++) {
+    				
+    				if(a[i]==a[j]) {
+    					
+    					k++;
+    					
+    				}
+    				
+    				
+    				
+    			}
+    			
+    			if(k==2) {
+    			System.out.println("Element- "+a[i]+"-came"+k+"-times");
+    			}
+    		}
+    		
+    		
+    	}
+    	
+    	System.out.println(ab);
+    }
+
 }
