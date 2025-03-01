@@ -23,7 +23,7 @@ public class Interview {
 		System.out.println("Factorial of your number is-"+fact);
 	}
 	
-	@Test
+	//@Test
 public void stringReverse() {
 		
 //		Scanner sc1=new Scanner(System.in);
@@ -57,5 +57,87 @@ public void stringReverse() {
 		System.out.println("Reverse of your string is -"+wordwise );
 	}
 
+	
+	//////////////////////////////////////
+	
+   // @Test
+	public void findSecondLargestElement() {
+		
+		//Find the second largest number from an array
+		
+		int a[]= {251,6,65,888,58,356,18};
+		
+		int largest=1;
+		int secondLargest=1;
+		
+		for(int i=0;i<a.length;i++) {
+			
+			if(a[i]>largest) {
+				
+				largest=a[i];
+				
+			}
+		
+		}
+	
+		 for(int j=0;j<a.length;j++) {
+				
+				if(a[j]>secondLargest && a[j]<largest) {
+					
+					secondLargest=a[j];
+					
+				}
+			
+			
+		}
+		
+		System.out.println("Your largest number is-"+largest);
+		
+		System.out.println("Your Second largest number is-"+secondLargest);
+		
+		
+		
+		
+		
+		
+		
+	}
 
+
+    @Test
+    public void findSecondSmallestElement() {
+    	
+		//Find the second smallest number from an array
+		
+		int a[]= {1,45,65,13,4,11,2,1};
+		
+		int smallest=a.length;
+		int Secondsmallest=a.length;
+		
+		for(int i=0;i<a.length;i++) {
+			
+			if(a[i]<smallest) {
+				
+				smallest=a[i];
+			}
+			
+		
+		}
+		for(int j=0;j<a.length;j++) {
+			
+			if(a[j]<Secondsmallest && a[j]>smallest) {
+				
+				Secondsmallest=a[j];
+			}
+		///////
+		
+		
+			
+			
+		}
+	System.out.println("Your smallest number is-"+smallest);
+	System.out.println("Your Second smallest number is-"+Secondsmallest);
+	
+	
+}
 }

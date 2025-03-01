@@ -5,7 +5,7 @@
     <classes>
       <class name="interViewPractice.Interview">
         <methods>
-          <include name="stringReverse"/>
+          <include name="findSecondSmallestElement"/>
         </methods>
       </class> <!-- interViewPractice.Interview -->
     </classes>
