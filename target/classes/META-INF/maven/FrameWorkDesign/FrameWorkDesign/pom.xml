@@ -58,7 +58,33 @@
 
 
    </dependencies> 
-
+   
+   
+   <profiles>
+   <profile>
+  			
+  				<id>uatSmoke</id>
+  				
+  				<build>
+			        <pluginManagement>
+			            <plugins>
+			              
+			                 <plugin>
+						          <groupId>org.apache.maven.plugins</groupId>
+						          <artifactId>maven-surefire-plugin</artifactId>
+						          <version>3.0.0-M3</version>
+						          <configuration>
+					          <suiteXmlFiles>
+					            <suiteXmlFile>testng.xml</suiteXmlFile>
+					          </suiteXmlFiles>
+			        			</configuration>
+			        		</plugin>
+			                
+			             </plugins>
+			        </pluginManagement>
+                </build>
+  			</profile>
+   </profiles>
 </project>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	

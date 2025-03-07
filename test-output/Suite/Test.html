@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 10 20:04:17 IST 2025</td>
+<td>Started on:</td><td>Fri Mar 07 17:34:55 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41825 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36944 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected:&lt;Incorrect email or password.&gt; but was:&lt;unknown error occured&gt;
 	at frameWork.ErrorValidation.sumitOrder(ErrorValidation.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace604602011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace604602011'><pre>java.lang.AssertionError: expected:&lt;Incorrect email or password.&gt; but was:&lt;unknown error occured&gt;
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace397857830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace397857830'><pre>java.lang.AssertionError: expected:&lt;Incorrect email or password.&gt; but was:&lt;unknown error occured&gt;
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
 	at frameWork.ErrorValidation.sumitOrder(ErrorValidation.java:42)
@@ -115,7 +115,48 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>frameWork.ErrorValidation@4b741d6d</td></tr>
+<td>frameWork.ErrorValidation@2eae8e6e</td></tr>
+<tr>
+<td title='frameWork.StandAlone.sumitOrder()'><b>sumitOrder</b><br>Test class: frameWork.StandAlone<br>Parameters: {password=Jeet!1234, product=BANARSI SAREE, email=jeet@1212gmail.com}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;jitendraSahuCompany.pageObjects.ProductsCataLog.getProductByName(String)&quot; is null
+	at jitendraSahuCompany.pageObjects.ProductsCataLog.addTocart(ProductsCataLog.java:65)
+	at frameWork.StandAlone.sumitOrder(StandAlone.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace263382013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace263382013'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;jitendraSahuCompany.pageObjects.ProductsCataLog.getProductByName(String)&quot; is null
+	at jitendraSahuCompany.pageObjects.ProductsCataLog.addTocart(ProductsCataLog.java:65)
+	at frameWork.StandAlone.sumitOrder(StandAlone.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>frameWork.StandAlone@35dab4eb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,17 +170,46 @@ function toggleAllBoxes() {
 <td title='frameWork.StandAlone.sumitOrder()'><b>sumitOrder</b><br>Test class: frameWork.StandAlone<br>Parameters: {password=Jeet!1234, product=ADIDAS ORIGINAL, email=jeet@1212gmail.com}</td>
 <td></td>
 <td>7</td>
-<td>frameWork.StandAlone@8519cb4</td></tr>
-<tr>
-<td title='frameWork.StandAlone.sumitOrder()'><b>sumitOrder</b><br>Test class: frameWork.StandAlone<br>Parameters: {password=Jeet!1234, product=BANARSI SAREE, email=jeet@1212gmail.com}</td>
-<td></td>
-<td>6</td>
-<td>frameWork.StandAlone@8519cb4</td></tr>
+<td>frameWork.StandAlone@35dab4eb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='frameWork.StandAlone.myOrdersTest()'><b>myOrdersTest</b><br>Test class: frameWork.StandAlone</td>
-<td></td>
-<td>3</td>
-<td>frameWork.StandAlone@8519cb4</td></tr>
+<td><div><pre>java.lang.Throwable: Method frameWork.StandAlone.myOrdersTest() on instance frameWork.StandAlone@35dab4eb depends on not successfully finished methods 
+[frameWork.StandAlone.sumitOrder() on instance frameWork.StandAlone@35dab4eb]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1532675992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1532675992'><pre>java.lang.Throwable: Method frameWork.StandAlone.myOrdersTest() on instance frameWork.StandAlone@35dab4eb depends on not successfully finished methods 
+[frameWork.StandAlone.sumitOrder() on instance frameWork.StandAlone@35dab4eb]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>frameWork.StandAlone@35dab4eb</td></tr>
 </table><p>
 </body>
 </html>

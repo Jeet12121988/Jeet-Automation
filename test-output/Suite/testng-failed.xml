@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="frameWork.StandAlone">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="myOrdersTest"/>
+          <include name="sumitOrder" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- frameWork.StandAlone -->
       <class name="frameWork.ErrorValidation">
         <methods>
           <include name="launchApplication"/>
